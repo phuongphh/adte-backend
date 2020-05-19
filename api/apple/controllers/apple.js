@@ -5,4 +5,12 @@
  * to customize this controller
  */
 
-module.exports = {};
+module.exports = {
+
+  count(ctx) {
+    if (ctx.query._q) {
+      return strapi.services.apple.countSearch(ctx.query);
+    }
+    return strapi.services.apple.count(ctx.query);
+  },
+};

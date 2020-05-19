@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "apples",
+  "info": {
+    "name": "apple"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}

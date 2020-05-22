@@ -1,6 +1,6 @@
 {
   "host": "18.141.176.197",
-  "port": "443",
+  "port": "1337",
   "proxy": {
     "enabled": false
   },

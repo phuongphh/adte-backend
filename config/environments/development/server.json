@@ -8,10 +8,6 @@
     "enabled": false
   },
   "admin": {
-    "autoOpen": false,
-    "build": {
-      "host": "http://18.141.176.197/admin",
-      "backend": "http://18.141.176.197/"
-    }
+    "autoOpen": false
   }
 }

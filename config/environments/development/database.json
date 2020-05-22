@@ -5,7 +5,7 @@
       "connector": "mongoose",
       "settings": {
         "database": "adte",
-        "host": "172.31.16.63",
+        "host": "127.0.0.1",
         "srv": false,
         "port": 27017,
         "username": "",

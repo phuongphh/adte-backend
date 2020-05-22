@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "articles",
+  "info": {
+    "name": "Article"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "content": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "highlight": {
+      "type": "string"
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "author": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "promotion": {
+      "type": "integer",
+      "max": 100,
+      "min": 1
+    },
+    "tag": {
+      "type": "string"
+    },
+    "location": {
+      "model": "location"
+    },
+    "category": {
+      "model": "category"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "created",
+        "posted",
+        "removed"
+      ]
+    }
+  }
+}

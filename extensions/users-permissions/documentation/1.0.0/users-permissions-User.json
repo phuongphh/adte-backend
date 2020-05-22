@@ -1244,6 +1244,9 @@
                 }
               }
             }
+          },
+          "rated": {
+            "type": "number"
           }
         }
       },
@@ -1281,6 +1284,9 @@
           },
           "role": {
             "type": "string"
+          },
+          "rated": {
+            "type": "number"
           }
         }
       }
